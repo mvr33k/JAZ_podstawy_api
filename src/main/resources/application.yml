@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: myprofile
+    custom:
+      property: false
+
+application:
+    name: mar
+my:
+  own:
+    prop: hello from app properties
