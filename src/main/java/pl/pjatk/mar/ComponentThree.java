@@ -6,7 +6,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
 //@Component
-@ImportResource("bean.xml")
 public class ComponentThree {
 //    Dla @Component
     public ComponentThree(ApplicationContext applicationContext){

@@ -3,9 +3,24 @@ spring:
     active: myprofile
     custom:
       property: false
+  main:
+    banner-mode: 'off'
+
+#ustawione nie wyswietla bledow, w razie W zakomentowac
+logging:
+  level:
+    root: 'off'
+
+custom:
+  login-url: test-login
+  credentials:
+    user: test-user
+    password: pass
 
 application:
     name: mar
+
 my:
   own:
     prop: hello from app properties
+

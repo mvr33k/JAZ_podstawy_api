@@ -27,6 +27,8 @@ public class ConfigClass {
         return null;
     }
 
+
+
 //    @Bean
 //    public void RandomBean(@Value("${my.own.prop}") String valueFromProperties){
 //        System.out.println(valueFromProperties);

@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/test")
 public class ApiController {
 
+    @GetMapping("/exception")
+    public ResponseEntity<String> exception(){
+        throw new RuntimeException("nie rozumiem polecenia");
+    }
+
     @GetMapping("/hello")
     public ResponseEntity<String> returnHello(
             @RequestParam("reqParam") String someValue) {
@@ -28,4 +33,6 @@ public class ApiController {
             @RequestBody Car newCar) {
         return ResponseEntity.ok(newCar);
     }
+
+
 }
